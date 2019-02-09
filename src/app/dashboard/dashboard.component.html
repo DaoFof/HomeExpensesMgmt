@@ -1,9 +1,64 @@
-<div class="container color-dark">
-  <div class="col">
-    <p> Add a bucket list item</p>
-  </div>
 
-  <div class="col">
-    <p>Your bucket list ({{itemCount}}) </p>
+  <div class="row">
+    <div class="col-3 col-s-6">
+        <div class="widget style1 black-bg">
+                <div class="row">
+                    <div class="col-4 col-s-2 text-center">
+                        <i class="fa fa-trophy fa-5x"></i>
+                    </div>
+                    <div class="col-8 col-s-10 text-right">
+                        <span> Today income </span>
+                        <h2 class="font-bold">$ 4,232</h2>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-3 col-s-6">
+        <div class="widget style1 red-bg">
+                <div class="row">
+                    <div class="col-4 col-s-2 text-center">
+                        <i class="fa fa-trophy fa-5x"></i>
+                    </div>
+                    <div class="col-8 col-s-10 text-right">
+                        <span> Today income </span>
+                        <h2 class="font-bold">$ 4,232</h2>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-3 col-s-6">
+        <div class="widget style1 yellow-bg">
+                <div class="row">
+                    <div class="col-4 col-s-2 text-center">
+                        <i class="fa fa-trophy fa-5x"></i>
+                    </div>
+                    <div class="col-8 col-s-10 text-right">
+                        <span> Today income </span>
+                        <h2 class="font-bold">$ 4,232</h2>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-3 col-s-6">
+        <div class="widget style1 navy-bg">
+                <div class="row">
+                    <div class="col-4 col-s-2 text-center">
+                        <i class="fa fa-trophy fa-5x"></i>
+                    </div>
+                    <div class="col-8 col-s-10 text-right">
+                        <span> Today income </span>
+                        <h2 class="font-bold">$ 4,232</h2>
+                    </div>
+                </div>
+        </div>
+    </div>
   </div>
-</div>
+  <p-toast [style]="{marginTop: '80px'}" styleClass="custom-toast"  ></p-toast>
+
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+      <p-chart type="line" [data]="data" (onDataSelect)="selectData($event)"></p-chart>
+    </div>
+  </div>

@@ -1,16 +1,5 @@
-.container{
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
-  .col{
-    padding: .4em 1.3em;
-  }
-  .color-dark{
-    background: #2885C4;
-  }
-  .color-light{
-    background: #57B3F1;
-  }
+
+
   input.txt{
     border: 0;
     padding: 1em;
@@ -26,3 +15,20 @@
     margin-bottom: 1em;
     cursor: pointer;
   }
+/*Widget*/
+  .widget {
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.text-right {
+    text-align: right;
+}
+
+:host ::ng-deep .custom-toast .ui-toast-message {
+  color: #ffffff;
+  background: #FC466B;
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+}
